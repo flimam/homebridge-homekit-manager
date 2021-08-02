@@ -1,16 +1,16 @@
 {
   "private": true,
-  "displayName": "Plugin Name",
-  "name": "homebridge-plugin-name",
-  "version": "2.0.0",
-  "description": "A short description about what your plugin does.",
+  "displayName": "HomeKit Manager",
+  "name": "homebridge-homekit-manager",
+  "version": "0.0.1",
+  "description": "Plugin responsible to management and controller devices connected from HomeKit protocol. The Homekit-manager possibility the utilization ti devices out HomeKit environment.",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/USERNAME/GITHUB_PROJECT_NAME.git"
+    "url": "git://github.com/flimam/homebridge-homekit-manager.git"
   },
   "bugs": {
-    "url": "https://github.com/USERNAME/GITHUB_PROJECT_NAME/issues"
+    "url": "https://github.com/flimam/homebridge-homekit-manager/issues"
   },
   "engines": {
     "node": ">=10.17.0",
@@ -26,7 +26,13 @@
   "keywords": [
     "homebridge-plugin"
   ],
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "node-red-contrib-homebridge-automation": "^0.0.77",
+    "python-shell": "^2.0.3",
+    "sprintf-js": "1.1.2"
+  },
   "devDependencies": {
     "@types/node": "^14.14.6",
     "@typescript-eslint/eslint-plugin": "^4.6.1",
@@ -36,6 +42,6 @@
     "nodemon": "^2.0.6",
     "rimraf": "^3.0.2",
     "ts-node": "^9.0.0",
-    "typescript": "^4.0.5"
+    "watch": "^1.0.2"
   }
 }

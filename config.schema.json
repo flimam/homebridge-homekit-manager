@@ -1,7 +1,9 @@
 {
-  "pluginAlias": "ExampleHomebridgePlugin",
+  "pluginAlias": "Homekit-Manager",
   "pluginType": "platform",
   "singular": true,
+  "headerDisplay": "Management Homekit devices",
+
   "schema": {
     "type": "object",
     "properties": {
@@ -9,7 +11,37 @@
         "title": "Name",
         "type": "string",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "placeholder": "18",
+        "default": "Homekit protocol"
+      },
+      "configFile": {
+        "title": "Config File Homekit",
+        "type": "string",
+        "required": true,
+        "placeholder": "~/.homebridge/homekit.json",
+        "description": "Set the full path to file.json that storage access token homekit devices"
+      },
+      "devicesUsed": {
+        "title": "Paired Devices",
+        "type": "array",
+        "items": {
+          "title": "Device Name",
+          "type": "string",
+          "description": "Label name added in command line from terminal"
+        }
+      },
+      "debug": {
+        "title": "Verbose log",
+        "type": "boolean",
+        "default": false,
+        "description": "Show full log plugin"
+      },
+      "discover": {
+        "title": "Discover mode",
+        "type": "boolean",
+        "default": true,
+        "description": "In start, it will discover devices in local network with HomeKit protocol"
+
       }
     }
   }
