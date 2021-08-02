@@ -14,11 +14,11 @@ Plugin responsible to management and controller devices connected from HomeKit p
 
 you need installed in your host:
 
-```
+
 - python3 (3.6 or later) [`documentation`](https://www.python.org/downloads/)
 - homekit (0.9 or later) [`documentation`](https://pypi.org/project/homekit/)
 - node.js (10.17.X or later) [`documentation`](https://nodejs.org/en/download/)
-```
+
 
 for install package, you need execute in terminal:
 
